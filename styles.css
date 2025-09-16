@@ -1012,6 +1012,7 @@ footer{
     }
     .infinity-scroll-container {
         padding: 30px 0;
+        margin-top: 10px;
     }
     .scroll-item {
         font-size: 1rem;
