@@ -39,7 +39,7 @@ html{
     font-weight: 600;
     width: 90%;
     padding-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 .section-explainer{
     font-family: Inter;
@@ -956,6 +956,9 @@ footer{
     .logo {
         flex: 1; /* keep logo pushed to the left */
     }
+    header{
+        padding-top: 15px;
+    }
     header i.fas.fa-bars {
         font-size: 1.8rem;
         cursor: pointer;
@@ -994,14 +997,14 @@ footer{
         padding-top: 50px;
     }
     .hero-content h1{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         text-align: center;
     }
     .hero-content p{
         font-size: 1rem;
         width: 100%;
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 14px;
     }
     .hero-content a{
         width: 100%;
@@ -1010,6 +1013,7 @@ footer{
     }
     .infinity-scroll-container {
         padding: 30px 0;
+        margin-top: 20px;
     }
     .scroll-item {
         font-size: 1rem;
@@ -1112,7 +1116,7 @@ footer{
         padding: 30px 16px;
     }
     #faq{
-        padding: 0 20px;
+        padding: 0= 20px;
     }
     .faq_box{
         flex-direction: column;
@@ -1161,7 +1165,5 @@ footer{
         padding-bottom: 12px;
     }
 }
-
-
 
 
