@@ -777,7 +777,7 @@ header, .hero {
     font-size: 1.1rem;
 }
 .contact-form{
-    background-color: #252525;
+    background-color: #1a1a1a;
     flex-basis: 58%;
     padding: 20px 40px;
     border-radius: 10px;
@@ -788,8 +788,14 @@ header, .hero {
 }
 .contact-form input{
     display: block;
+    background: none;
+    border: 1px solid #FFC471;
+    color: #b5b5b5;
 }
 .contact-form input, textarea{
+    background: none;
+    border: 1px solid #FFC471;
+    color: #b5b5b5;
     width: 100%;
     padding: 8px 12px;
     margin-bottom: 10px;
@@ -1169,6 +1175,5 @@ footer{
         padding-bottom: 12px;
     }
 }
-
 
 
