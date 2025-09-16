@@ -122,7 +122,8 @@ header{
 }
 
 .mobile-menu ul li {
-  margin: 20px 0;
+  margin: 26px 0;
+  display: block;
 }
 
 .mobile-menu a {
@@ -423,6 +424,10 @@ header, .hero {
 }
 #our_works .section-explainer{
     padding-bottom: 24px;
+}
+/* Default: hide dropdown, show spans */
+.works-picker-select{ 
+    display: none;
 }
 .works-picker{
     padding: 14px 0;
@@ -983,19 +988,20 @@ footer{
         display: none;
     }
     .menu ul li a:hover{
-    color: white;
-}
+        color: white;
+    }
     .hero-content{
-        padding-top: 60px;
+        padding-top: 50px;
     }
     .hero-content h1{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     .hero-content p{
         font-size: 1rem;
         width: 100%;
         text-align: center;
+        padding-bottom: 30px;
     }
     .hero-content a{
         width: 100%;
@@ -1015,6 +1021,12 @@ footer{
     .about-us{
         flex-direction: column-reverse;
         padding-top: 40px;
+    }
+    .aboutus-image-one img{
+    height: 250px;
+    }
+    .aboutus-image-two img{
+        height: 150px;
     }
     .aboutus-content{
         margin-bottom: 15px;
@@ -1053,6 +1065,19 @@ footer{
         padding: 0 20px;
     }
     .works-picker{
+    display: none; 
+   }
+   .works-picker-select {
+       display: block;
+       width: 100%;
+       padding: 14px;
+       background: #1a1a1a;
+       border-radius: 6px;
+       font-size: .9rem;
+       border: none;
+       color: white;
+   }
+    .works-picker{
         width: 100%;
     }
     .works-picker span{
@@ -1069,7 +1094,10 @@ footer{
     #testimonials{
         padding: 0 20px;
         min-height: auto;
-        margin-bottom: 40px;
+    }
+    .testimonial-slide{
+        width: 22rem !important;
+        height: 28rem !important;
     }
     #how-it-works{
         padding: 0 20px;
@@ -1093,20 +1121,29 @@ footer{
         padding-top: 30px;
         margin: 20px 0;
     }
+    .faq-question h3 {
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    #faq .reverse{
+        flex-direction: column;
+    }
     #contact_us{
         padding: 0 20px;
     }
     .contact_box{
         flex-direction: column-reverse;
         width: 100%;
-        padding-top: 10px;
+        padding-top: 0px;
+        gap: 10px;
     }
     .enquiry-box{
-        padding: 30px ;
+        padding: 24px ;
         margin-top: 20px;
     }
     .contact-form{
-        padding: 30px;
+        padding: 14px;
     }
     .contact-form h1{
         padding-top: 0;
@@ -1120,7 +1157,7 @@ footer{
     }
       #about_us, #our_services, #our_works, #testimonials, #how-it-works, #faq, #contact_us{
         min-height: auto;
-        padding-bottom: 20px;
+        padding-bottom: 12px;
     }
 }
 
