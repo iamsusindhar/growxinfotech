@@ -788,9 +788,6 @@ header, .hero {
 }
 .contact-form input{
     display: block;
-    background: none;
-    border: 1px solid #FFC471;
-    color: #b5b5b5;
 }
 .contact-form input, textarea{
     background: none;
