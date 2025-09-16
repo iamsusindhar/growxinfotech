@@ -136,6 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500);
         }, 300);
     }
+    // Add change event for mobile select
+    document.querySelector('.works-picker-select')
+    .addEventListener('change', (e) => {
+        updateWorks(e.target.value);
+    });
+
 
     // Add click events to picker spans
     worksPicker.querySelectorAll('span').forEach(span => {
