@@ -956,7 +956,7 @@ footer{
         flex: 1; /* keep logo pushed to the left */
     }
     header{
-        padding-top: 15px;
+        padding-top: 20px;
     }
     header i.fas.fa-bars {
         font-size: 1.8rem;
@@ -1012,7 +1012,6 @@ footer{
     }
     .infinity-scroll-container {
         padding: 30px 0;
-        margin-top: 12px;
     }
     .scroll-item {
         font-size: 1rem;
@@ -1146,11 +1145,15 @@ footer{
         padding: 24px ;
         margin-top: 20px;
     }
+    .enquiry-box h1{
+        font-size: 1.3rem;
+    }
     .contact-form{
         padding: 14px;
     }
     .contact-form h1{
         padding-top: 0;
+        font-size: 1.3rem;
     }
     footer{
         padding: 0 10px;
@@ -1164,6 +1167,5 @@ footer{
         padding-bottom: 12px;
     }
 }
-
 
 
