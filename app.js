@@ -275,3 +275,39 @@ particlesJS('particles-js', {
     retina_detect: true
 });
 
+// Contact Form 
+
+// Contact Form (replace the existing submit handler's fetch code with this)
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const status = document.getElementById('form-status');
+  status.textContent = "Sending...";
+
+  // Use FormData to avoid preflight CORS issues
+  const fd = new FormData();
+  fd.append('name', this.name.value);
+  fd.append('email', this.email.value);
+  fd.append('message', this.message.value);
+
+  try {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbyaxE-POAXFGNSjJTaWZmV1wyi6U70gk9XVdIbUy7GgtqgxQG9SG9ZOT81OGCklhnSDuQ/exec", {
+      method: "POST",
+      body: fd,            // browser sets the right Content-Type (multipart/form-data)
+      mode: "cors"         // optional but explicit
+    });
+
+    if (response.ok) {
+      // Try reading JSON response (the Apps Script below returns JSON)
+      const data = await response.json().catch(()=>null);
+      status.textContent = "✅ Message sent successfully!";
+      this.reset();
+    } else {
+      status.textContent = "❌ Something went wrong. Please try again.";
+      console.error('HTTP status:', response.status, await response.text());
+    }
+  } catch (err) {
+    console.error(err);
+    status.textContent = "❌ Network error. Please try again later.";
+  }
+});
